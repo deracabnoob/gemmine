@@ -10,6 +10,10 @@
             margin: 0;
             padding: 20px;
         }
+        h1{
+            background-color: aliceblue;
+            color: black;
+        }
         .upload-form {
             margin-bottom: 20px;
         }
@@ -27,7 +31,7 @@
     </style>
 </head>
 <body>
-    <h1>Upload Gems and Keks!</h1>
+    <h1>Upload Gems and Keks in this Gem mine!</h1>
     <form class="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
         <label for="file-upload">Choose Gem to upload:</label>
         <input type="file" id="file-upload" name="file-upload" accept="image/*,video/*" required>
