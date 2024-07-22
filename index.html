@@ -9,44 +9,78 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: rgb(20, 20, 20); /* Corrected background color */
+            background-color: rgb(20, 20, 20); /* Background color */
+            color: white; /* Default text color for better readability */
+        }
+        header {
+            background-color: aqua;
+            font-size: 2em;
+            font-family: 'Brush Script MT', 'cursive';
+            color: black;
+            padding: 10px;
+            text-align: center;
         }
         h1 {
             background-color: aqua;
             color: black;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            font-size: 1.5em; /* Adjusted for responsiveness */
         }
         .upload-form {
-            margin-bottom: 20px;
+            margin: 20px 0;
+            text-align: center; /* Center the form */
+        }
+        .upload-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .upload-form input[type="file"] {
+            margin-bottom: 10px;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center; /* Center gallery items */
         }
         .gallery-item {
             margin: 10px;
+            max-width: 100%;
+            box-sizing: border-box; /* Ensure padding does not exceed width */
         }
         img, video {
             max-width: 100%;
             height: auto;
         }
-        header {
-            background-color: aqua;
-            font-size: 80px;
-            font-family: 'Brush Script MT', 'cursive';
-            color: black;
-        }
         footer {
-            color: white; /* To make sure text is visible on dark background */
-            padding: 10px;
-            border-top: 1px solid #333; /* Optional: adds a border to separate the footer */
-            text-align: center; /* Center the footer text */
+            color: white;
+            padding: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            font-size: 0.9em; /* Adjusted for readability on smaller screens */
         }
         footer a {
-            color: lightblue; /* Color for the link in the footer */
+            color: lightblue;
             text-decoration: none;
         }
         footer a:hover {
             text-decoration: underline;
+        }
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5em; /* Smaller header text */
+            }
+            h1 {
+                font-size: 1.2em; /* Smaller h1 text */
+            }
+            .upload-form {
+                padding: 0 10px; /* Add padding for small screens */
+            }
+            footer {
+                font-size: 0.8em; /* Smaller footer text */
+            }
         }
     </style>
 </head>
